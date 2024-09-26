@@ -42,10 +42,13 @@
     </div>
     </section>
 <main class="main" >
-    <form  >
+   
     <div class="dbox" >
-<div>    <label>DATE</label>
-    <input type="text" id="date" name="description" placeholder="enter date" ></div>
+        <form class="form" >
+<div>   
+     <label>DATE</label>
+    <input type="date" id="dob" name="dob" value="2023-09-26" min="2023-01-01" max="2045-12-31" >
+</div>
 <div>
     <label>DESCRIPTION</label>
     <input type="text" id="description" name="description" placeholder="enter remarks" >
@@ -59,8 +62,11 @@
     <input type="number" id="expense" name="description" placeholder="enter expense" >
 </div>
 
+<div>
 
-    <button onclick="add()" >add</button>
+    <input type="submit" value="add" >
+</div>
+
 </form>
 </div>
 </main>

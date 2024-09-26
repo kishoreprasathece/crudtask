@@ -35,18 +35,20 @@ padding: 2%;
 .main{
     background-color: aliceblue;
     height: 100px;
+
+
 }
 .footer{
     background-color: black;
     color: aliceblue;
      height: 100px;
 }
-.dbox{
-    height: 80px;
+.form{
+ background-color: indigo;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
-    padding: 1%;
+    justify-content: space-around;
+    padding: 3%;
 }
 
 #stat{
