@@ -21,8 +21,8 @@ function getformdata() {
 
     receiveddata['dob'] = document.getElementById('dob').value;
     receiveddata['description'] = document.getElementById('description').value;
-    receiveddata['income'] = parseFloat(document.getElementById('income').value) || 0;
-    receiveddata['expense'] = parseFloat(document.getElementById('expense').value) || 0;
+    receiveddata['income'] = parseFloat(document.getElementById('income').value);
+    receiveddata['expense'] = parseFloat(document.getElementById('expense').value);
 
     return receiveddata;
 }
@@ -47,27 +47,13 @@ function addrow(data) {
     let cell5 = newRow.insertCell(4);
     cell5.innerText = total;
 
+    let cell6 = newRow.insertCell(5);
+    cell6.innerHTML=`<button onClick="onEdit(this)" > Edit </button> <button onClick="onDelete(this)" > Del </button> `
+
+
     newdata = null; 
 }
 
-function updateTotals(receiveddata) {
-    let incomeSpan = document.getElementById('incom');
-    let expenSpan = document.getElementById('expen');
-    let totalSpan = document.getElementById('total');
-
-    let currentIncome = parseFloat(incomeSpan.innerText) || 0;
-    let currentExpen = parseFloat(expenseSpan.innerText) || 0;
-
- 
-    currentIncome += receiveddata.income;
-    currentExpen += receiveddata.expense;
-
-    incomeSpan.innerText = currentIncome;
-    expenSpan.innerText = currentExpense;
-
-
-    totalSpan.innerText = currentIncome - currentExpen;
-}
 
 function onEdit(td) {
 
