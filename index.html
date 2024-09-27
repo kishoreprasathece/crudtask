@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="style.css" >
 </head>
 <body>
-    <header class="header" >
-        <div   >
-           <img id="logo" src="image/logo.png" >
-           <h>Cash Flow Manager</h>    
+    <header class="header">
+        <div>
+            <img id="logo" src="image/logo.png">
+            <h>Cash Flow Manager</h>
         </div>
-       <div>
-        <h>"Control Your Spending, Achieve Your Goals"</h>
-       </div>
+        <div>
+            <h>"Control Your Spending, Achieve Your Goals"</h>
+        </div>
     </header>
-<nav class="nav" >
-        <ul id="ul" >
+    <nav class="nav">
+        <ul id="ul">
             <li><a href="#">Daily</a></li>
             <li><a href="#">Monthly</a></li>
             <li><a href="#">Calendar</a></li>
@@ -25,75 +25,67 @@
             <li><a href="#">Description</a></li>
         </ul>
     </nav>
-
-    <section class="calc" >
+    <section class="calc">
         <div>
-        <p>Income </p>
-            <span>  0.00</span>
+            <p>Income</p>
+            <span>0.00</span>
         </div>
         <div>
-        <p>Expense </p>
-        <span>0.00</span>
-    </div>
-    
-    <div>
-        <p>Total</p>
-        <span>0.00</span>
-    </div>
+            <p>Expense</p>
+            <span>0.00</span>
+        </div>
+        <div>
+            <p>Total</p>
+            <span>0.00</span>
+        </div>
     </section>
-<main class="main" >
-   
-    <div class="dbox" >
-        <form class="form" >
-<div>   
-     <label>DATE</label>
-    <input type="date" id="dob" name="dob" value="2023-09-26" min="2023-01-01" max="2045-12-31" >
-</div>
-<div>
-    <label>DESCRIPTION</label>
-    <input type="text" id="description" name="description" placeholder="enter remarks" >
-</div>
-<div>
-    <label>INCOME</label>
-    <input type="number" id="income" name="description" placeholder="enter income" >
-</div>
-<div>
-    <label>EXPENSE</label>
-    <input type="number" id="expense" name="description" placeholder="enter expense" >
-</div>
-
-<div>
-
-    <input type="submit" value="add" >
-</div>
-
-</form>
-</div>
-</main>
-<table class="table"  >
-    <thead>
-        <tr>
-        <th>Date</th>
-        <th>Description</th>
-        <th>Income</th>
-        <th>Expense</th>
-    <th>TOTAL</th>
-</tr>
-
-    </thead>
-    <tbody>
-      
-    </tbody>
-  </table>
-    <footer class="footer" >
-          
-            <ul   id="stat"  >
-                <li><a href="#">stats</a></li>
-                <li><a href="#">Stats</a></li>
-                <li><a href="#">Accounts</a></li>
-                <li><a href="#">More</a></li>
-            </ul>
-
+    <main class="main">
+        <div>
+            <form onsubmit="calculatenow(event)" class="form">
+                <div>
+                    <label>DATE</label>
+                    <input type="date" id="dob" name="dob" value="2023-09-26" min="2023-01-01" max="2045-12-31">
+                </div>
+                <div>
+                    <label>DESCRIPTION</label>
+                    <input type="text" id="description" name="description" placeholder="enter remarks">
+                </div>
+                <div>
+                    <label>INCOME</label>
+                    <input type="number" id="income" name="income" placeholder="enter income">
+                </div>
+                <div>
+                    <label>EXPENSE</label>
+                    <input type="number" id="expense" name="expense" placeholder="enter expense">
+                </div>
+                <div>
+                    <input type="submit" value="calculate">
+                </div>
+            </form>
+        </div>
+    </main>
+    <table class="data" id="put">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Income</th>
+                <th>Expense</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <footer class="footer">
+        <ul id="stat">
+            <li><a href="#">stats</a></li>
+            <li><a href="#">Stats</a></li>
+            <li><a href="#">Accounts</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
     </footer>
+<script src="script.js" ></script>
 </body>
-</html>
+    </html>
+    
