@@ -1,15 +1,36 @@
 .header {
     background-color: black;
-    color: red;
-    height: 80px;
+    color: white;
+    height: 100px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 3%; 
 }
+
 #logo {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 70px;
+    padding: 1%;
+    border: 4px solid white;
+    margin-bottom: 10%; 
 }
+
+.title-container {
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+}
+
+#cash {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    cursor: grab;
+    margin: 0; 
+   color: aliceblue;
+}
+
 .nav {
     background-color: deeppink;
     color: white;
@@ -55,16 +76,48 @@
 }
 #income {
     color: green;
-    background-color: rgb(225, 235, 231);
-    height: 25px;
+    background-color: white;
+    height: 30px;
+    font-weight: 900;
+    border: 2px solid blue;
 }
-#expense {
+#expense{
     color: red;
-    background-color: rgb(225, 235, 231);
-    height: 25px;
+    background-color:white;
+    height: 30px;
+    font-weight: 900;
+    border: 2px solid blue;
 }
+#dob{
+  
+    background-color: white;
+    height: 30px;
+    font-weight: 900;
+    border: 2px solid blue;
+}
+#description{
+    color:black;
+    font-weight: 900;
+    background-color:white;
+    height: 30px;
+    border: 2px solid blue;
+}
+
+#calculate{
+    background:orange;
+    color: white;
+    padding: 15px 40px;
+    margin: 5px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+
 table {
-    width: 90%;
+
+    width: 100%;
     margin: 50px auto;
     padding: 10px;
     background: black;
@@ -75,11 +128,13 @@ table.list {
     width: 80%;
 }
 td {
-    border: 4px solid violet;
+
+    border: 4px solid black;
     text-align: center;
     padding: 10px 15px;
-    background-color: rgb(152, 7, 152);
-    color: black;
+    background: black;
+    color: pink;
+    
 }
 Button {
     background: green;

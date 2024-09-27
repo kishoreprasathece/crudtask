@@ -9,12 +9,14 @@
 <body>
     <header class="header">
         <div>
-            <img id="logo" src="image/logo.png">
-            <h>Cash Flow Manager</h>
+            <img id="logo" src="image/logo.png" alt="Logo">
         </div>
-        <div>
-            <h>"Control Your Spending, Achieve Your Goals"</h>
+        <div class="title-container">
+            <h2 id="cash">Cash Flow Manager</h2>
         </div>
+    </header>
+    
+            
     </header>
     <nav class="nav">
         <ul id="ul">
@@ -28,15 +30,15 @@
     <section class="calc">
         <div>
             <p>Income</p>
-            <span>0.00</span>
+            <span id="incom" >0</span>
         </div>
         <div>
             <p>Expense</p>
-            <span>0.00</span>
+            <span id="expen" >0</span>
         </div>
         <div>
             <p>Total</p>
-            <span>0.00</span>
+            <span id="total"  >0</span>
         </div>
     </section>
     <main class="main">
@@ -59,7 +61,7 @@
                     <input type="number" id="expense" name="expense" placeholder="enter expense">
                 </div>
                 <div>
-                    <input type="submit" value="calculate">
+                    <input type="submit" id="calculate" value="calculate">
                 </div>
             </form>
         </div>
