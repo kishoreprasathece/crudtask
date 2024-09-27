@@ -60,12 +60,12 @@ function onEdit(td) {
     let row = td.parentElement.parentElement;
 
 
-    document.getElementById('dob').value = row.cells[0].innerText;
-    document.getElementById('description').value = row.cells[1].innerText;
-    document.getElementById('income').value = row.cells[2].innerText;
-    document.getElementById('expense').value = row.cells[3].innerText;
+    document.getElementById('dob').value = row.cells[0].innerText=''
+    document.getElementById('description').value = row.cells[1].innerText=''
+    document.getElementById('income').value = row.cells[2].innerText=''
+    document.getElementById('expense').value = row.cells[3].innerText=''
 
-    newdata = row; 
+    newdata = receiveddata; 
 }
 
 function onDelete(td) {
@@ -74,24 +74,7 @@ function onDelete(td) {
         document.getElementById('put').deleteRow(row.rowIndex);
         
 
-        recalculateTotals();
+
     }
-}
-
-function recalculateTotals() {
-    let totalIncome = 0;
-    let totalExpen = 0;
-    let total =0;
-    let table = document.getElementById('put').getElementsByTagName('tbody')[0];
-    let rows = table.getElementsByTagName('tr');
-
-    for (let row of rows) {
-        totalIncome += parseFloat(row.cells[2].innerText) || 0;
-        totalExpen += parseFloat(row.cells[3].innerText) || 0;
-    }
-
-    document.getElementById('incom').innerText = totalIncome;
-    document.getElementById('expen').innerText = totalExpen;
-    document.getElementById('total').innerText = totalIncome - totalExpen;
 }
 
