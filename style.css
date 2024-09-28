@@ -66,6 +66,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 3%;
+    color: aqua;
 }
 #stat {
     display: flex;
@@ -146,3 +147,85 @@ Button {
     cursor: pointer;
     font-size: 16px;
 }
+#edit {
+    background-color: #f44336; 
+
+    color: white;
+    padding: 15px 40px;
+    margin: 5px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#networth{
+font-size: xx-large;
+    color: greenyellow;
+}
+#netincome{
+font-size: xx-large;
+    color: greenyellow;
+}
+#netexpense{
+font-size: xx-large;
+    color: red;
+}
+
+@media (max-width: 480px) {
+    .main {
+        background-color: aliceblue;
+        height: 200px;
+    }
+    .form {
+        background-color: indigo;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1%;
+        gap: 10px;
+        color: aqua;
+    }
+    Button {
+        background: green;
+        color: white;
+        padding: 5px 19px;
+        margin: 5px 10px;
+        border: 1px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    #edit {
+        background-color: #f44336; 
+    
+        color: white;
+        padding: 5px 4px;
+        margin: 5px 10px;
+        border: 1px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    table {
+
+        width: 100%;
+        margin: 50px auto;
+        padding: 10px;
+        background: black;
+        color: pink;
+    }
+    table.list {
+        text-align: center;
+        width: 80%;
+    }
+    td {
+    
+        border: 4px solid black;
+        text-align: center;
+        padding: 1px;
+        background: black;
+        color: pink;
+       
+    }
+}
+
