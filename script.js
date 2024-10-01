@@ -2,6 +2,9 @@ var data = null;
 var editRow = null; 
 document.addEventListener('DOMContentLoaded', loadStoredData); 
 
+
+
+
 function calculatenow(event) {
     event.preventDefault();
     let receiveddata = getformdata();
@@ -18,6 +21,26 @@ function calculatenow(event) {
 
     editRow = null; 
 }
+
+
+  function showInputField() {
+    var transactionType = document.getElementById("transactionType").value;
+    if (transactionType === "income") {
+      document.getElementById("incomeInput").style.display = "block";
+      document.getElementById("expenseInput").style.display = "none";
+    } else if (transactionType === "expense") {
+      document.getElementById("incomeInput").style.display = "none";
+      document.getElementById("expenseInput").style.display = "block";
+    } else {
+      document.getElementById("incomeInput").style.display = "none";
+      document.getElementById("expenseInput").style.display = "none";
+    }
+  }
+
+   
+
+
+
 
 function getformdata() {
     let receiveddata = {};
